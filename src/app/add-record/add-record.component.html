@@ -1,0 +1,48 @@
+<div class="card" id="AddRecordComponent">
+    <div class="card-header bg-info">
+        Add Record
+    </div>
+    <div class="card-body">
+        <form [formGroup]="record">
+
+            <input type="text" formControlName="name" class="form-control" placeholder="Name" required>
+            <div class="text-danger" *ngIf="record.controls.name.touched && record.controls.name.errors?.required">
+                Name is required
+            </div>
+
+
+            <input type="text" formControlName="designation" class="form-control" placeholder="Designation" required>
+            <div class="text-danger"
+                *ngIf="record.controls.designation.touched && record.controls.designation.errors?.required">
+                Designaion is required
+            </div>
+
+
+            <input type="number" formControlName="salary" class="form-control" placeholder="Salary" required>
+            <div class="text-danger" *ngIf="record.controls.salary.touched && record.controls.salary.errors?.required">
+                Salary is required
+            </div>
+
+
+            <input type="date" formControlName="joiningDate" class="form-control" placeholder="Joining Date" required>
+            <div class="text-danger"
+                *ngIf="record.controls.joiningDate.touched && record.controls.joiningDate.errors?.required">
+                Joining Date is required
+            </div>
+
+
+            <select class="form-control" formControlName="type" required>
+                <option disabled selected>Select Type</option>
+                <option>Full Time</option>
+                <option>Contractor</option>
+            </select>
+            <div class="text-danger" *ngIf="record.controls.type.touched && record.controls.type.errors?.required">
+                Job Type is required
+            </div>
+
+
+        </form>
+
+        <button class="btn btn-success" id='addButton' style="float: right;" [disabled]="record.status == 'INVALID'" (click)="addRecord()">Add</button>
+    </div>
+</div>

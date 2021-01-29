@@ -1,0 +1,47 @@
+<div class='container'>
+  <h1 class="text-success">
+    {{title}}
+  </h1>
+  <br>
+  <button class='btn btn-primary' (click)='load()'>Add Record</button>
+  <br>
+  <br>
+  <div>
+    <table class="table table-striped">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Designation</th>
+        <th>Joining Date</th>
+        <th>Type</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let employee of employees$ | async" class="fade-in">
+        <td>
+          {{employee._id}}
+        </td>
+        <td>
+          {{employee.name}}
+        </td>
+        <td>
+          {{employee.salary}}
+        </td>
+        <td>
+          {{employee.designation}}
+        </td>
+        <td>
+          {{employee.joiningDate | date:"MM/dd/yy"}}
+        </td>
+        <td>
+          {{employee.type}}
+        </td>
+        <td>
+          <button class="btn btn-secondary" (click)='load(employee._id)'>Edit</button>&nbsp;
+          <button class="btn btn-danger" (click)='delete(employee._id)'>Delete</button>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

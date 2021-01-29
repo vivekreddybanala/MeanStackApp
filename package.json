@@ -1,0 +1,58 @@
+{
+  "name": "mean-stack-app",
+  "version": "11.1.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --port 4200",
+    "build": "ng build",
+    "test": "ng test --code-coverage",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "item": "ng generate component add-record"
+  },
+  "author": {
+    "name": "vivekreddybanala",
+    "email": "vivekreddy.banala007@gmail.com"
+  },
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "11.1.0",
+    "@angular/common": "11.1.0",
+    "@angular/compiler": "11.1.0",
+    "@angular/core": "11.1.0",
+    "@angular/forms": "11.1.0",
+    "@angular/localize": "11.1.0",
+    "@angular/platform-browser": "11.1.0",
+    "@angular/platform-browser-dynamic": "11.1.0",
+    "@angular/router": "11.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^9.0.2",
+    "bootstrap": "^4.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.13",
+    "rxjs": "6.6.3",
+    "tslib": "2.1.0",
+    "zone.js": "0.11.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "0.1101.1",
+    "@angular/cli": "11.1.1",
+    "@angular/compiler-cli": "11.1.0",
+    "@types/jasmine": "3.6.3",
+    "@types/node": "14.14.22",
+    "codelyzer": "6.0.1",
+    "jasmine-core": "3.6.0",
+    "jasmine-spec-reporter": "6.0.0",
+    "karma": "6.0.1",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-coverage": "2.0.3",
+    "karma-jasmine": "4.0.1",
+    "karma-jasmine-html-reporter": "1.5.4",
+    "protractor": "7.0.0",
+    "ts-node": "9.1.1",
+    "tslint": "6.1.3",
+    "typescript": "4.0.5"
+  }
+}
