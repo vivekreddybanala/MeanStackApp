@@ -24,4 +24,8 @@ LocalHost URL
 http://localhost:4200/
 
 
+Testing
+- npm run test
+
+
 
