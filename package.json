@@ -8,7 +8,7 @@
     "test": "ng test --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "item": "ng generate component add-record"
+    "server": "node server.js"
   },
   "author": {
     "name": "vivekreddybanala",
